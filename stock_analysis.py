@@ -36,9 +36,9 @@ highest_close.show()
 
 # 4. Saves the results to GCS
 print("Saving the results to GCS:")
-unique_indices.coalesce(1).write.csv('gs://bigdata_assess2/unique_indices.csv', header=True)
-avg_prices.coalesce(1).write.csv('gs://bigdata_assess2/avg_prices.csv', header=True)
-highest_close.coalesce(1).write.csv('gs://bigdata_assess2/highest_close.csv', header=True)
+unique_indices.write.csv('gs://bigdata_assess2/unique_indices.csv', header=True)
+avg_prices.write.csv('gs://bigdata_assess2/avg_prices.csv', header=True)
+highest_close.write.csv('gs://bigdata_assess2/highest_close.csv', header=True)
 
 
 print("Unique Stock Indices saved to gs://bigdata_assess2/unique_indices.csv")
